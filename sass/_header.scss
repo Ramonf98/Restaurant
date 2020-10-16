@@ -1,0 +1,58 @@
+/* Estilos del header*/
+header{
+    width: 100%;
+    background: url(../img/bg.jpg) #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+
+    .contenedor{
+        position: relative;
+        height: 600px;
+    }
+
+    .menu{
+        width: 100%;
+        text-align: right;
+        a{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            display: inline-block;
+            margin: 40px 20px;
+            text-decoration: none;
+            position: relative; /* Es importante esta propiedad para poder trabajarlo con jquery */
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .textos{
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        color: #fff;
+        position: absolute; /* Es importante esta propiedad para poder trabajarlo con jquery y hacer el efecto parallax */
+        /* Las siguientes propiedades las aplique para centrar el texto de en una relacion vertical en el contenedor */
+        top: 50%;
+        margin-top: -50px;
+        
+        .nombre{
+            font-size: 50px;
+            font-weight: 600;
+            margin: 10px 0;
+            span{
+                font-weight: 300;
+            }
+            
+        }
+        h3{
+            font-weight: 300;
+            font-size: 25px;
+            font-style: italic;
+           
+        }
+    }
+
+
+}

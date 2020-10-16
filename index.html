@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café St. Denis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/parallax.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <!-- Cada elemento tiene un id, para trabajar con jquery, y que nos envie a la seccion correspondiente al hacer click. -->
+                <a href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a href="#" id="btn-ubicacion">Ubicación</a>
+            </nav>
+
+            <div class="textos">
+                <h1 class="nombre">Café <span>Saint Denis</span></h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            </div>
+        </div>
+    </header>
+    <!-- Seccion Principal -->
+    <section class="main">
+        <!-- Seccion acerca de  -->
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/acerca-de.jpg" alt="Foto del Café">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut bibendum quam. Etiam ornare, urna blandit tempus molestie, eros lacus mollis quam, ut laoreet enim ex a magna. </p>
+                    <p>Fusce finibus sit amet mauris eget lacinia. Sed ut sagittis ipsum. Donec egestas non ligula ut posuere. Duis vitae sapien quis mi fermentum congue. Curabitur imperdiet erat justo, non ullamcorper nisi semper ac. Nullam sit amet tellus consectetur, lobortis lectus euismod, ornare justo.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seccion del menu de platillos -->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <!-- Se encierra en dos contenedores para trabajar los dos bordes -->
+                <div class="contenedor-menu">
+                    <div class="contenedor-menu2">
+                        <!-- De comer -->
+                        <article>
+                            <p class="categoria">De Comer</p>
+                            <!-- Platillo 1 -->
+                            <div class="platillo">
+                                <p class="nombre">Duis auctor</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Consectetur adipiscing elit. Nulla ut bibendum quam.</p>
+                            </div>
+                            <!-- Platillo 2 -->
+                            <div class="platillo">
+                                <p class="nombre">Sed turpis ligula</p>
+                                <p class="precio">$12</p>
+                                <p class="descripcion">Etiam ornare, urna blandit tempus molestie, eros lacus mollis quam.</p>
+                            </div>
+                            <!-- Platillo 3 -->
+                            <div class="platillo">
+                                <p class="nombre">Duis blandit risus elit</p>
+                                <p class="precio">$20</p>
+                                <p class="descripcion">Aenean porta quam nec dui scelerisque pharetra quis eget eros.</p>
+                            </div>
+                             <!-- Platillo 4 -->
+                             <div class="platillo">
+                                <p class="nombre">Nulla ut congue elit</p>
+                                <p class="precio">$22</p>
+                                <p class="descripcion">Nunc turpis velit, finibus elementum lacinia eu, lacinia nec mi. Cras eu venenatis ex, eu dignissim nulla. </p>
+                            </div>
+                        </article>
+
+                           <!-- De Tomar -->
+                        <article>
+                            <p class="categoria">De Tomar</p>
+                            <!-- Bebida 1 -->
+                            <div class="platillo">
+                                <p class="nombre">Ruis</p>
+                                <p class="precio">$5</p>
+                                <p class="descripcion">Nulla ut bibendum quam. Consectetur adipiscing elit.</p>
+                            </div>
+                            <!-- Bebida 2 -->
+                            <div class="platillo">
+                                <p class="nombre">Ligula</p>
+                                <p class="precio">$8</p>
+                                <p class="descripcion">Eros lacus mollis quam. Etiam ornare, urna blandit tempus molestie.</p>
+                            </div>
+                            <!-- Bebida 3 -->
+                            <div class="platillo">
+                                <p class="nombre">Blandit risus</p>
+                                <p class="precio">$14</p>
+                                <p class="descripcion">Dui scelerisque pharetra quis eget eros. Aenean porta quam nec.</p>
+                            </div>
+                             <!-- Bebida 4 -->
+                             <div class="platillo">
+                                <p class="nombre">Ut congue</p>
+                                <p class="precio">$16</p>
+                                <p class="descripcion">lacinia nec mi. Cras eu venenatis ex,nunc turpis velit, finibus elementum lacinia eu. </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de la galeria de imagenes -->
+        <section class="galeria" id="galeria">
+                <!-- Foto numero 1 -->
+                <div class="foto">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                 <!-- Foto numero 2 -->
+                <div class="foto">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                 <!-- Foto numero 3 -->
+                <div class="foto">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                 <!-- Foto numero 4 -->
+                <div class="foto">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                 <!-- Foto numero 5 -->
+                <div class="foto">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                 <!-- Foto numero 6 -->
+                <div class="foto">
+                    <img src="img/6.jpg" alt="">
+                </div>
+                 <!-- Foto numero 7 -->
+                <div class="foto">
+                    <img src="img/7.jpg" alt="">
+                </div>
+                 <!-- Foto numero 8 -->
+                <div class="foto">
+                    <img src="img/8.jpg" alt="">
+                </div>
+
+        </section>
+
+        <!-- Seccion de la ubicacion -->
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+
+                <div class="direccion">
+                    <p class="calle">67 Wall St<br/> New York, NY 10005</p>
+                    <p class="telefono">(503) 400-5479</p>
+                    <p class="correo">contacto [arroba] hotmail.com</p>
+                </div>
+
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a Viernes <br> 8:00am - 9:00pm</p>
+                    <p class="fin-semana">Sabados y Domingos <br> 11:00am - 11:00pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion del mapa -->
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.1403775580185!2d-74.00874157080624!3d40.70565389870829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1669ec81c5%3A0xf8a561798558981f!2s67%20Wall%20St%2C%20New%20York%2C%20NY%2010005%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1590869677128!5m2!1ses-419!2smx" width="1600" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="copyright">
+                <p>Created by Ing. Ramón Cordova © 2020</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
